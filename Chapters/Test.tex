@@ -12,22 +12,27 @@ This approach reduces the noise given by comparing different matrix configuratio
 We conducted tests using two profiles, one with optimisation switched on and the other off, to see how compiler optimisations affect the results.
 
 \subsubsection{Performances Data}\label{sec:Data_Perf}
-The main metric used to evaluate the performance of the algorithms is the time to complete a single MVM computed with the aid of the $std::high_resolution_clock$.
+The main metric used to evaluate the performance of the algorithms is the time to complete a single MVM computed with the aid of the $std::high\_resolution\_clock$.
 \begin{figure}[!htb]
-\begin{minipage}{1\textwidth}
-    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_violin_plot (1).png}
+\begin{adjustwidth}{-1.75cm}{-1.75cm} % expands margins: left, right
+
+\begin{minipage}{1.25\textwidth}
+    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_dispersion_plot (1).png}
     \label{fig:no_opt_plot}}
 \end{minipage}
 \hfill
-\begin{minipage}{1\textwidth}
-    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_violin_plot_opt.png}
+\begin{minipage}{1.25\textwidth}
+    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_dispersion_plot.png}
     \label{fig:opt_plot}}
 \end{minipage}
 \caption{\\ Violin plots of the results with and without optimisation. \label{fig:plots}}
+\end{adjustwidth}
+
 \end{figure}
 
 \input{Figures/optimised_table.tex}
 \input{Figures/unoptimised_table.tex}
+\newpage
 
 \subsection{Performance Analysis}\label{sec:data_anal}
 The benchmark results demonstrate that the optimised implementation achieves approximately $4\times$ speedup over the naive approach when compiled with the O3 flag. 
@@ -46,7 +51,7 @@ However, under O3, the single-threaded optimised version becomes the fastest opt
 \subsubsection{Cache Behavior}\label{sec:cache_beh}
 Tables \ref{tab:cachegrind_o3_revised} and \ref{tab:cachegrind_o0} present detailed performance counters collected using Valgrind's Cachegrind tool.
 These metrics provide more data on how each algorithm interacts with the CPU cache hierarchy.
-Starting with the instruction counts (Ir), we observe a $4\times$ reduction in instructions executed. This outcome aligns with the overall memory access reductions seen in both data reads (Dr) and writes (Dw).
+Starting with the instruction counts (Ir), we observe a $4\times$ reduction in instructions executed when compiled with O3 and up to $6\times$ without compiler optimisations. This outcome aligns with the overall memory access reductions seen in both data reads (Dr) and writes (Dw).
 The cache miss rate (L1 Read Misses) remains constant across all algorithms and optimisation levels, indicating that our optimisations primarily reduce the volume of memory traffic rather than improving cache hit rates.
 However, a closer look at the miss count reveals that the remaining misses are the result of compulsory misses that Cachegrind can not simulate away by including hardware prefetching simulation.
 Using the Linux perf tool, further analysis shows that the algorithms achieve an almost-zero L1-cache miss rate on typical consumer hardware.
@@ -54,8 +59,8 @@ While this tool might not be as accurate as Cachegrind, it gives a better idea o
 
 \subsubsection{Memory Access Patterns}\label{sec:mem_access}
 The register reuse optimisation shows great benefits in memory usage.
-Under O0 compilation, data reads decrease by a factor of $3.1\times$ compared to the naive implementation, while under O3 this improvement reaches $20\times$.
-More significantly, write operations are reduced by $400\times$ (O0) and $260\times$ (O3).
+Under O0 compilation, data reads decrease by a factor of $4\times$ compared to the naive implementation, while under O3 this improvement reaches $40\times$.
+More significantly, write operations are reduced by $250\times$ (O0) and $260\times$ (O3).
 This reduction in memory traffic directly translates to performance gains, as memory accesses are the bottleneck in MVM operations.
 The difference between reads and writes between O0 and O3 highlights how compiler optimisations can further enhance the benefits of algorithmic improvements.
 

@@ -2,7 +2,41 @@
 This chapter will focus on the implementation of the PCM module within the GVSoC framework.
 We will start by introducing the architecture of the module and the data structures used to store the crossbar values.
 Then we will analyse the MVM algorithm and how we can optimise it to achieve better performance.
-The first step before starting the implementation is to define the constraints of the architecture and the software running the simulator.
+Before starting the implementation is key to define how the simulator works and the constraints of the architecture and the software running the simulator.
+
+\section{GVSoC Integration}\label{sec:gvsoc_integration}
+
+To integrate the PCM module into GVSoC, we implemented it as a memory-mapped peripheral following the standard GVSoC module architecture.
+
+\subsection{Module Structure}
+The implementation consists of three components:
+
+\textbf{C++ Model Class:} The core logic is implemented in a class inheriting from \textit{vp::component}. This class handles incoming memory requests, maintains the PCM crossbar state, and executes MVM operations.
+
+\textbf{Python Generator:} A configuration script generates the module's JSON configuration file and defines its connections to other system components. The generator specifies the module's address range, memory size, and available operational modes.
+
+\textbf{JSON Configuration:} The generated JSON file contains all module parameters including matrix dimensions, cell precision, and timing characteristics.
+
+\subsection{Bus Interface}
+The module connects to the system through GVSoC's wire mechanism. A request handler with signature \textit{vp::IoReqStatus handler(vp::Block* block, vp::IoReq* req)} processes incoming read and write operations from the simulated RISC-V cores.
+
+The memory map exposes three regions:
+\begin{itemize}
+  \item \textbf{Weight Memory:} Direct access to PCM cell values for reading and writing weights values.
+  \item \textbf{Input/Output Vectors:} Buffers for MVM operands and results.
+  \item \textbf{Control Registers:} Configuration of operation mode, matrix dimensions, and computation triggers
+\end{itemize}
+
+\subsection{Timing Model}
+GVSoC is a event driven simulator, the timing is represented in two ways:
+\begin{itemize}
+  \item \textbf{Functional Timing:} Each operations (e.g., read, write) can be performed in zero time, meaning that the operation is completed as soon as it is called but a latency is added to the envent to guarantee correct timing simulation.
+  \item \textbf{Event Scheduling:} Operations can be scheduled to occur after a specific delay by enqueing the event in the simulator's event queue. Once the delay elapses, the event triggers the module's \textit{ClockEvent} handler to process the operation.
+\end{itemize}
+The module will make good use of these mechanism, simulating the timing characteristics of PCM operations.
+
+\subsection{Power Management}
+The module connects to GVSoC's power wire system, allowing it to be powered down when not in use. While no specific power management features are implemented, the module can be easily extended to include them in the future.
 
 \section{Architecture Constraints}\label{sec:arch_const}
 Before analysing the module itself, it is important to define some hardware constraints of the hardware running the simulator and software constraints of the simulator itself.
@@ -114,9 +148,11 @@ It is important to consider this design change when designing the data structure
 \subsection{Register Reuse}\label{sec:reg_reuse}
 Register reuse strategies are a great way to improve performance by reducing the number of memory accesses.
 Specifically to this case, computing the sum of each row into a register without the need to store intermediate results in the output vector eliminates unnecessary memory writes and reads.
+
+To implement this optimisation, a temporary variable is used to store the result of each row computation before writing it back to the output vector.
 This approach leads to a significant reduction in memory accesses, with the only drawback that it is applicable only when the compiler is set to optimise the code.
 Analysing the assembly code generated for each of the cases, it is immediately clear why.
-In the non-optimised case the compiler store that same value on the stack and retrieves it at each iteration degrading the overall performances.\\
+In the non-optimised case the compiler store that value on the stack and retrieves it at each iteration degrading the overall performances.\\
 \input{Figures/ams_comp.tex}
 \subsection{Multithreading}\label{sec:multithread}
 While cache-friendliness and register reuse are great ways to improve performance, multithreading is one of the best performance boosters in both MVMs and MMs.

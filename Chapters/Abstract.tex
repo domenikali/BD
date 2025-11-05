@@ -28,6 +28,6 @@ The model is implemented in C++ and integrated into the GVSoC simulation platfor
 A significant part of the work focused on optimising the simulation itself, making it sufficiently fast to be useful for experimentation.
 This involved designing cache-friendly data structures and implementing multithreaded execution for the core Matrix-Vector Multiplication algorithm.
 Performance benchmarks demonstrate the effectiveness of these optimisations.
-The flat buffer data structure reduces cache misses by up to x times compared to a standard multidimensional array approach,  %TODO: re-check numbers again
+The flat buffer data structure reduces data reads by up to 5 times compared to a standard multidimensional array approach, 
 and multithreading provides significant speedup on multi-core systems, with optimal performance achieved at 8 threads for the tested configurations.
 The result is a configurable simulation framework that can be used to explore AIMC architectures and provides a foundation for co-designing hardware accelerators and the software needed to use them effectively.

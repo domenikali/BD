@@ -1,7 +1,7 @@
 \chapter{Conclusion \& Future Work}\label{chap:conclusion}
 \section{Conclusion}\label{sec:res_sum}
 In this dissertation, we designed, implemented, and validated a virtual prototype of a Phase-Change-Memory-based analog in-memory computing accelerator within the GVSoC simulation environment for the PULP platform. 
-The core of the work is a C++ model that performs efficient matrix-vector multiplication while closely reproducing PCM device physics, including the analog resistance states and the associated read/write dynamics. 
+The core of the work is a C++ virtual prototype that performs efficient matrix-vector multiplication by modeling a PCM crossbar array, abstracting its core operational principles rather than its deep device physics, and incorporating some key non-ideal effects like ADC clipping and wheights size.
 This model was seamlessly integrated into GVSoC as a memory-mapped peripheral, which allows full-system simulation and enables the accelerator's performance to be evaluated within a complete system-on-chip environment. 
 To improve simulation speed and scalability, we flattened data structures to optimise memory-access patterns, reducing cache misses and increasing overall throughput, and we introduced multithreaded kernels that parallelise the MVM computations across cores. 
 Extensive benchmarking identified the optimal thread counts for a variety of hardware configurations. 

@@ -1,0 +1,1151 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{sulatycke_caching-efficient_1998}{inproceedings}{}{}
+      \name{author}{2}{}{%
+        {{hash=c53bfe32218c46d2124ed701fbfb10e9}{%
+           family={Sulatycke},
+           familyi={S\bibinitperiod},
+           given={P.D.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=40a1d198e14729a4c57a750d23a07d56}{%
+           family={Ghose},
+           familyi={G\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{fullhash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{fullhashraw}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{bibnamehash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{authorbibnamehash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{authornamehash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{authorfullhash}{043c8b827be193b4a45ccac01acb9c0e}
+      \strng{authorfullhashraw}{043c8b827be193b4a45ccac01acb9c0e}
+      \field{labelalpha}{SG98}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Several fast sequential algorithms have been proposed in the past to multiply sparse matrices. These algorithms do not explicitly address the impact of caching on performance. We show that a rather simple sequential cache-efficient algorithm provides significantly better performance than existing algorithms for sparse matrix multiplication. We then describe a multithreaded implementation of this simple algorithm and show that its performance scales well with the number of threads and CPUs. For 10\% sparse, 500/spl times/500 matrices, the multithreaded version running on 4-CPU systems provides more than a 41.1-fold speed increase over the well-known BLAS routine and a 14.6 fold and 44.6-fold speed increase over two other recent techniques for fast sparse matrix multiplication, both of which are relatively difficult to parallelize efficiently.}
+      \field{booktitle}{Proceedings of the {First} {Merged} {International} {Parallel} {Processing} {Symposium} and {Symposium} on {Parallel} and {Distributed} {Processing}}
+      \field{month}{3}
+      \field{note}{ISSN: 1063-7133}
+      \field{title}{Caching-efficient multithreaded fast multiplication of sparse matrices}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{117\bibrangedash 123}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/IPPS.1998.669899
+      \endverb
+      \verb{file}
+      \verb Snapshot:C\:\\Users\\leona\\Zotero\\storage\\F3XUUTEV\\669899.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/669899
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/669899
+      \endverb
+      \keyw{Algorithm design and analysis,Computational fluid dynamics,Computer science,Data structures,Delay,Linear systems,Matrix converters,Sparse matrices,Symmetric matrices,Yarn}
+    \endentry
+    \entry{wuttig_phase-change_2007}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ad7c8c49d23e281d860a0fd232c12e7e}{%
+           family={Wuttig},
+           familyi={W\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=048deb855fbfc7f3ff923fe0e25c2003}{%
+           family={Yamada},
+           familyi={Y\bibinitperiod},
+           given={Noboru},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{fullhash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{fullhashraw}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{bibnamehash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{authorbibnamehash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{authornamehash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{authorfullhash}{3a3a572190478c401d5e4dac46fa27e4}
+      \strng{authorfullhashraw}{3a3a572190478c401d5e4dac46fa27e4}
+      \field{labelalpha}{WY07}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Phase-change materials are some of the most promising materials for data-storage applications. They are already used in rewriteable optical data storage and offer great potential as an emerging non-volatile electronic memory. This review looks at the unique property combination that characterizes phase-change materials. The crystalline state often shows an octahedral-like atomic arrangement, frequently accompanied by pronounced lattice distortions and huge vacancy concentrations. This can be attributed to the chemical bonding in phase-change alloys, which is promoted by p-orbitals. From this insight, phase-change alloys with desired properties can be designed. This is demonstrated for the optical properties of phase-change alloys, in particular the contrast between the amorphous and crystalline states. The origin of the fast crystallization kinetics is also discussed.}
+      \field{issn}{1476-4660}
+      \field{journaltitle}{Nature Mater}
+      \field{month}{11}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{11}
+      \field{title}{Phase-change materials for rewriteable data storage}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{6}
+      \field{year}{2007}
+      \field{urldateera}{ce}
+      \field{pages}{824\bibrangedash 832}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1038/nmat2009
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\3LY2FZGH\\Wuttig e Yamada - 2007 - Phase-change materials for rewriteable data storage.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmat2009
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmat2009
+      \endverb
+      \keyw{Biomaterials,Condensed Matter Physics,general,Materials Science,Nanotechnology,Optical and Electronic Materials}
+    \endentry
+    \entry{cooper_how_2011}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=45967aa6e7b72d1bd2a1a5868319db8b}{%
+           family={Nicolau},
+           familyi={N\bibinitperiod},
+           given={Alexandru},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e17a66c4d326c7a7212006e36b517184}{%
+           family={Kejariwal},
+           familyi={K\bibinitperiod},
+           given={Arun},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=15170cd48d4f5fad744cca57eb23799b}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Keith},
+           giveni={K\bibinitperiod}}}%
+        {{hash=853d1926d31c5d176cf0adc530f99efa}{%
+           family={Mellor-Crummey},
+           familyi={M\bibinithyphendelim C\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=694b6a2cda85144b301a8f45936cf9bb}{%
+           family={Sarkar},
+           familyi={S\bibinitperiod},
+           given={Vivek},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Berlin, Heidelberg}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{fullhash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{fullhashraw}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{bibnamehash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{authorbibnamehash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{authornamehash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{authorfullhash}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{authorfullhashraw}{5a53ac6be0382327ce18bac639b0bff9}
+      \strng{editorbibnamehash}{c1ad3058b4165679894b13014e0f57b9}
+      \strng{editornamehash}{c1ad3058b4165679894b13014e0f57b9}
+      \strng{editorfullhash}{c1ad3058b4165679894b13014e0f57b9}
+      \strng{editorfullhashraw}{c1ad3058b4165679894b13014e0f57b9}
+      \field{labelalpha}{NK11}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Languages and {Compilers} for {Parallel} {Computing}}
+      \field{isbn}{978-3-642-19594-5 978-3-642-19595-2}
+      \field{note}{Series Title: Lecture Notes in Computer Science}
+      \field{title}{How {Many} {Threads} to {Spawn} during {Program} {Multithreading}?}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{6548}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \field{pages}{166\bibrangedash 183}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/978-3-642-19595-2_12
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-642-19595-2_12
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-642-19595-2_12
+      \endverb
+    \endentry
+    \entry{srinivasan_study_2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9127ef85499ce7765a46703605f59b02}{%
+           family={Srinivasan},
+           familyi={S\bibinitperiod},
+           given={Rajarajan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c754ebd93af0c8d21f309ea278447ac1}{%
+           family={Prabhu},
+           familyi={P\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=38c6d86398035931e090d487d39f1e4a}{%
+           family={Arunkumar},
+           familyi={A\bibinitperiod},
+           given={Sabari},
+           giveni={S\bibinitperiod}}}%
+        {{hash=15d37bf1d8c774b8a179bb95ca818103}{%
+           family={Karthikeyan},
+           familyi={K\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f3d802b40fb12d7f340a84bd26b461a7}
+      \strng{fullhash}{d5c93de5ba096626a2164341abeb9fc6}
+      \strng{fullhashraw}{d5c93de5ba096626a2164341abeb9fc6}
+      \strng{bibnamehash}{f3d802b40fb12d7f340a84bd26b461a7}
+      \strng{authorbibnamehash}{f3d802b40fb12d7f340a84bd26b461a7}
+      \strng{authornamehash}{f3d802b40fb12d7f340a84bd26b461a7}
+      \strng{authorfullhash}{d5c93de5ba096626a2164341abeb9fc6}
+      \strng{authorfullhashraw}{d5c93de5ba096626a2164341abeb9fc6}
+      \field{labelalpha}{Sri+13}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{For several decades, computer's memory has been volatile. High speed memories such as DRAM and SRAM have been used as main memory and cache memory respectively. Magnetic disks are used as the persistent secondary storage devices. The present DRAM based main memory has reached its energy lits. Due to the advent of nonvolatile memories like PCM, MRAM, RRAM, FeRAM and Flash, there is growing interest in incorporating them into the computers as the main memory alternates. Introducing the non-volatile storage devices in memory hierarchy is considered to reduce the energy consumption since non-volatile memories have got no power leakage in memory cells. A major hurdle in this direction is the poor the endurance limit of most non-volatile memory technologies in comparison to the RAM technologies. Among the non-volatile memory technologies, PCM is the most attractive and the most investigated option due to it advantages over other memory types. But there are few issues related to PCM that need to be addressed in order to integrate it as a potential memory for computers. There have been intense researches being carried out to devise new memory architectures based on PCM. There are also methods identified to overcome the issues of PCM. This paper analyses the various challenges in integrating PCM into the system and the various PCM based main memory architectures that have been proposed so far. INTRODUCTION memory capacity. A number of non-volatile memories are}
+      \field{journaltitle}{Middle East Journal of Scientific Research}
+      \field{month}{12}
+      \field{title}{A {Study} on the {Challenges} and {Prospects} of {PCM} {Based} {Main} {Memory} {Architectures}}
+      \field{volume}{18}
+      \field{year}{2013}
+      \field{pages}{788\bibrangedash 795}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.5829/idosi.mejsr.2013.18.6.12500
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\43GV494A\\Srinivasan et al. - 2013 - A Study on the Challenges and Prospects of PCM Based Main Memory Architectures.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{yajnaseni_survey_2015}{report}{}{}
+      \name{author}{3}{}{%
+        {{hash=d72b8fcabf0334c7f28deac2eb6111d0}{%
+           family={Yajnaseni},
+           familyi={Y\bibinitperiod},
+           given={Dash},
+           giveni={D\bibinitperiod}}}%
+        {{hash=0e6f0c736cd5c8ae421cfb9232d5fc91}{%
+           family={Sanjay},
+           familyi={S\bibinitperiod},
+           given={Kumar},
+           giveni={K\bibinitperiod}}}%
+        {{hash=ee4ec7dd8bc1514aaaeefcb700aac84b}{%
+           family={V.K.},
+           familyi={V\bibinitperiod},
+           given={Patle},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {School of Studies inComputer Science \&IT, Pt. RavishankarShukla University,Raipur, Chhattisgarh,492010, India.}%
+      }
+      \strng{namehash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{fullhash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{fullhashraw}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{bibnamehash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{authorbibnamehash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{authornamehash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{authorfullhash}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \strng{authorfullhashraw}{7bbcbcf082d945f1f165f3a0b8d93a89}
+      \field{labelalpha}{YSV15}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{A {Survey} on {Serial} and {Parallel} {Optimization} {Techniques} {Applicable} for {Matrix} {Multiplication} {Algorithm}}
+      \field{type}{techreport}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb (PDF) A Survey on Serial and Parallel Optimization Techniques Applicable for Matrix Multiplication Algorithm:C\:\\Users\\leona\\Zotero\\storage\\GKMAPHY2\\285131617_A_Survey_on_Serial_and_Parallel_Optimization_Techniques_Applicable_for_Matrix_Multipl.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/285131617_A_Survey_on_Serial_and_Parallel_Optimization_Techniques_Applicable_for_Matrix_Multiplication_Algorithm
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/285131617_A_Survey_on_Serial_and_Parallel_Optimization_Techniques_Applicable_for_Matrix_Multiplication_Algorithm
+      \endverb
+    \endentry
+    \entry{wyrzykowski_mathematical_2016}{incollection}{}{}
+      \name{author}{4}{}{%
+        {{hash=1e3e6f9a925f706faa3d23efd5e124e0}{%
+           family={D’Amore},
+           familyi={D\bibinitperiod},
+           given={Luisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8f69034e618380e2f8a0e8f2b8b30c00}{%
+           family={Mele},
+           familyi={M\bibinitperiod},
+           given={Valeria},
+           giveni={V\bibinitperiod}}}%
+        {{hash=9fb46233a4d77508bc385f23bafc0d7d}{%
+           family={Laccetti},
+           familyi={L\bibinitperiod},
+           given={Giuliano},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b3c40ca39fb9e55d20ee615d423ed5d6}{%
+           family={Murli},
+           familyi={M\bibinitperiod},
+           given={Almerico},
+           giveni={A\bibinitperiod}}}%
+      }
+      \name{editor}{6}{}{%
+        {{hash=de8f7c87bd9ed0ae83267411335030bd}{%
+           family={Wyrzykowski},
+           familyi={W\bibinitperiod},
+           given={Roman},
+           giveni={R\bibinitperiod}}}%
+        {{hash=d02359a80b79dd7835c67a7fc420927e}{%
+           family={Deelman},
+           familyi={D\bibinitperiod},
+           given={Ewa},
+           giveni={E\bibinitperiod}}}%
+        {{hash=b57e9502ada0493415564206d6641312}{%
+           family={Dongarra},
+           familyi={D\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+        {{hash=86f85c5b96cb35e1ca267253a1bb5392}{%
+           family={Karczewski},
+           familyi={K\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod}}}%
+        {{hash=308c171322de796242a35de9d9ac0323}{%
+           family={Kitowski},
+           familyi={K\bibinitperiod},
+           given={Jacek},
+           giveni={J\bibinitperiod}}}%
+        {{hash=98588ea58498c0ce726d7df2339e1530}{%
+           family={Wiatr},
+           familyi={W\bibinitperiod},
+           given={Kazimierz},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{05f6def143e559127d26a40fe43cf71a}
+      \strng{fullhash}{f04dfaf19261dee1703726d843f7e5f1}
+      \strng{fullhashraw}{f04dfaf19261dee1703726d843f7e5f1}
+      \strng{bibnamehash}{05f6def143e559127d26a40fe43cf71a}
+      \strng{authorbibnamehash}{05f6def143e559127d26a40fe43cf71a}
+      \strng{authornamehash}{05f6def143e559127d26a40fe43cf71a}
+      \strng{authorfullhash}{f04dfaf19261dee1703726d843f7e5f1}
+      \strng{authorfullhashraw}{f04dfaf19261dee1703726d843f7e5f1}
+      \strng{editorbibnamehash}{be217b9c6ea2a3786e54e8a384558624}
+      \strng{editornamehash}{be217b9c6ea2a3786e54e8a384558624}
+      \strng{editorfullhash}{f4bd6fd1745100b96e342bf458c1fbdb}
+      \strng{editorfullhashraw}{f4bd6fd1745100b96e342bf458c1fbdb}
+      \field{labelalpha}{DAm+16}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Parallel {Processing} and {Applied} {Mathematics}}
+      \field{isbn}{978-3-319-32151-6 978-3-319-32152-3}
+      \field{note}{Series Title: Lecture Notes in Computer Science}
+      \field{title}{Mathematical {Approach} to the {Performance} {Evaluation} of {Matrix} {Multiply} {Algorithm}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{9574}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{25\bibrangedash 34}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1007/978-3-319-32152-3_3
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-319-32152-3_3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-319-32152-3_3
+      \endverb
+    \endentry
+    \entry{gallo_overview_2020}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=891451a46b89999ef26de3c7d15e926d}{%
+           family={Gallo},
+           familyi={G\bibinitperiod},
+           given={Manuel\bibnamedelima Le},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=a0c0cc3b33339e8dbd75d862b7f904f2}{%
+           family={Sebastian},
+           familyi={S\bibinitperiod},
+           given={Abu},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{fullhash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{fullhashraw}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{bibnamehash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{authorbibnamehash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{authornamehash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{authorfullhash}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \strng{authorfullhashraw}{4a0678c0d271a8325c4dfe95819a5b5b}
+      \field{labelalpha}{GS20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An overview of phase-change memory device physics, Le Gallo, Manuel, Sebastian, Abu}
+      \field{issn}{0022-3727}
+      \field{journaltitle}{J. Phys. D: Appl. Phys.}
+      \field{month}{3}
+      \field{note}{Publisher: IOP Publishing}
+      \field{number}{21}
+      \field{title}{An overview of phase-change memory device physics}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{53}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{213002}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1361-6463/ab7794
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/1361-6463/ab7794/meta
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/1361-6463/ab7794/meta
+      \endverb
+    \endentry
+    \entry{sebastian_memory_2020}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=a0c0cc3b33339e8dbd75d862b7f904f2}{%
+           family={Sebastian},
+           familyi={S\bibinitperiod},
+           given={Abu},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d3460cbb901fceb04c02107682718490}{%
+           family={Le\bibnamedelima Gallo},
+           familyi={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Manuel},
+           giveni={M\bibinitperiod}}}%
+        {{hash=069a768de29a83c6bffd1588cdd22f5c}{%
+           family={Khaddam-Aljameh},
+           familyi={K\bibinithyphendelim A\bibinitperiod},
+           given={Riduan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=20a376a5e2f3deef1310a5e5ddc0f658}{%
+           family={Eleftheriou},
+           familyi={E\bibinitperiod},
+           given={Evangelos},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{fullhash}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{fullhashraw}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{bibnamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authorbibnamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authornamehash}{b82dc02f100a35ebdd9bbcd8f34c79ff}
+      \strng{authorfullhash}{3a8c50a527aac00c5d373a56268efdd0}
+      \strng{authorfullhashraw}{3a8c50a527aac00c5d373a56268efdd0}
+      \field{labelalpha}{Seb+20}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Traditional von Neumann computing systems involve separate processing and memory units. However, data movement is costly in terms of time and energy and this problem is aggravated by the recent explosive growth in highly data-centric applications related to artificial intelligence. This calls for a radical departure from the traditional systems and one such non-von Neumann computational approach is in-memory computing. Hereby certain computational tasks are performed in place in the memory itself by exploiting the physical attributes of the memory devices. Both charge-based and resistance-based memory devices are being explored for in-memory computing. In this Review, we provide a broad overview of the key computational primitives enabled by these memory devices as well as their applications spanning scientific computing, signal processing, optimization, machine learning, deep learning and stochastic computing.}
+      \field{issn}{1748-3395}
+      \field{journaltitle}{Nat. Nanotechnol.}
+      \field{month}{7}
+      \field{note}{Publisher: Nature Publishing Group}
+      \field{number}{7}
+      \field{title}{Memory devices and applications for in-memory computing}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \field{pages}{529\bibrangedash 544}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.1038/s41565-020-0655-z
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\X4KX4ZVA\\Sebastian et al. - 2020 - Memory devices and applications for in-memory computing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/s41565-020-0655-z
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/s41565-020-0655-z
+      \endverb
+      \keyw{Electrical and electronic engineering,Electronic devices,Information storage}
+    \endentry
+    \entry{bruschi_gvsoc_2021}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=ed1dc53ef0ad42f23f6ea2b3e94028fa}{%
+           family={Bruschi},
+           familyi={B\bibinitperiod},
+           given={Nazareno},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d028af94cd3a2e88888109135f554a3f}{%
+           family={Haugou},
+           familyi={H\bibinitperiod},
+           given={Germain},
+           giveni={G\bibinitperiod}}}%
+        {{hash=51d860f19cda6eafd59f2a2124c05bed}{%
+           family={Tagliavini},
+           familyi={T\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+        {{hash=894ba44bf1d7c10e39b86b4262ef8847}{%
+           family={Conti},
+           familyi={C\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=ba31f0daddec3d14ef6a4f5279845d2d}{%
+           family={Benini},
+           familyi={B\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cec900c2c76db4ce83099c914c1a9a72}{%
+           family={Rossi},
+           familyi={R\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d8118f73c5b0f9ada2fb40fc429538f}
+      \strng{fullhash}{1cc637d787575936e6c5defd283c1dad}
+      \strng{fullhashraw}{1cc637d787575936e6c5defd283c1dad}
+      \strng{bibnamehash}{6d8118f73c5b0f9ada2fb40fc429538f}
+      \strng{authorbibnamehash}{6d8118f73c5b0f9ada2fb40fc429538f}
+      \strng{authornamehash}{6d8118f73c5b0f9ada2fb40fc429538f}
+      \strng{authorfullhash}{1cc637d787575936e6c5defd283c1dad}
+      \strng{authorfullhashraw}{1cc637d787575936e6c5defd283c1dad}
+      \field{labelalpha}{Bru+21}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The last few years have seen the emergence of IoT processors: ultra-low power systems-on-chips (SoCs) combining lightweight and flexible micro-controller units (MCUs), often based on open-ISA RISC-V cores, with application-specific accelerators to maximize performance and energy efficiency. Overall, this heterogeneity level requires complex hardware and a full-fledged software stack to orchestrate the execution and exploit platform features. For this reason, enabling agile design space exploration becomes a crucial asset for this new class of low-power SoCs. In this scenario, high-level simulators play an essential role in breaking the speed and design effort bottlenecks of cycle-accurate simulators and FPGA prototypes, respectively, while preserving functional and timing accuracy. We present GVSoC, a highly configurable and timing-accurate event-driven simulator that combines the efficiency of C++ models with the flexibility of Python configuration scripts. GVSoC is fully open-sourced, with the intent to drive future research in the area of highly parallel and heterogeneous RISC-V based IoT processors, leveraging three foundational features: Python-based modular configuration of the hardware description, easy calibration of platform parameters for accurate performance estimation, and high-speed simulation. Experimental results show that GVSoC enables practical functional and performance analysis and design exploration at the full-platform level (processors, memory, peripherals and IOs) with a speed-up of 2500x with respect to cycle-accurate simulation with errors typically below 10\% for performance analysis.}
+      \field{booktitle}{2021 {IEEE} 39th {International} {Conference} on {Computer} {Design} ({ICCD})}
+      \field{month}{10}
+      \field{note}{arXiv:2201.08166 [eess]}
+      \field{shorttitle}{{GVSoC}}
+      \field{title}{{GVSoC}: {A} {Highly} {Configurable}, {Fast} and {Accurate} {Full}-{Platform} {Simulator} for {RISC}-{V} based {IoT} {Processors}}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2021}
+      \field{urldateera}{ce}
+      \field{pages}{409\bibrangedash 416}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/ICCD53106.2021.00071
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:C\:\\Users\\leona\\Zotero\\storage\\4T4DJ4EA\\Bruschi et al. - 2021 - GVSoC A Highly Configurable, Fast and Accurate Full-Platform Simulator for RISC-V based IoT Process.pdf:application/pdf;Snapshot:C\:\\Users\\leona\\Zotero\\storage\\NRJ3CFQ4\\2201.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2201.08166
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2201.08166
+      \endverb
+      \keyw{Computer Science - Systems and Control,Electrical Engineering and Systems Science - Systems and Control}
+    \endentry
+    \entry{abboud_time_2023}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=17d9799616e46ba9e8d61e3f05933c2e}{%
+           family={Abboud},
+           familyi={A\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4334ca20b624af80592940ea44076698}{%
+           family={Bringmann},
+           familyi={B\bibinitperiod},
+           given={Karl},
+           giveni={K\bibinitperiod}}}%
+        {{hash=73b54f6cb5a84e080e85146fd3dcfc44}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=87d1d7bc407f9bae80604e2f88a0513e}{%
+           family={Künnemann},
+           familyi={K\bibinitperiod},
+           given={Marvin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{51ae715a6961585ef207827ce92f601e}
+      \strng{fullhash}{3d1145b22dd29b092fa41e7bfdb72366}
+      \strng{fullhashraw}{3d1145b22dd29b092fa41e7bfdb72366}
+      \strng{bibnamehash}{51ae715a6961585ef207827ce92f601e}
+      \strng{authorbibnamehash}{51ae715a6961585ef207827ce92f601e}
+      \strng{authornamehash}{51ae715a6961585ef207827ce92f601e}
+      \strng{authorfullhash}{3d1145b22dd29b092fa41e7bfdb72366}
+      \strng{authorfullhashraw}{3d1145b22dd29b092fa41e7bfdb72366}
+      \field{labelalpha}{Abb+23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{What is the time complexity of matrix multiplication of sparse integer matrices with \$m\_\{in\}\$ nonzeros in the input and \$m\_\{out\}\$ nonzeros in the output? This paper provides improved upper bounds for this question for almost any choice of \$m\_\{in\}\$ vs. \$m\_\{out\}\$, and provides evidence that these new bounds might be optimal up to further progress on fast matrix multiplication. Our main contribution is a new algorithm that reduces sparse matrix multiplication to dense (but smaller) rectangular matrix multiplication. Our running time thus depends on the optimal exponent \$ω(a,b,c)\$ of multiplying dense \$n{\textasciicircum}a{\textbackslash}times n{\textasciicircum}b\$ by \$n{\textasciicircum}b{\textbackslash}times n{\textasciicircum}c\$ matrices. We discover that when \$m\_\{out\}=Θ(m\_\{in\}{\textasciicircum}r)\$ the time complexity of sparse matrix multiplication is \$O(m\_\{in\}{\textasciicircum}\{σ+ε\})\$, for all \$ε\&gt; 0\$, where \$σ\$ is the solution to the equation \$ω(σ-1,2-σ,1+r-σ)=σ\$. No matter what \$ω({\textbackslash}cdot,{\textbackslash}cdot,{\textbackslash}cdot)\$ turns out to be, and for all \$r{\textbackslash}in(0,2)\$, the new bound beats the state of the art, and we provide evidence that it is optimal based on the complexity of the all-edge triangle problem. In particular, in terms of the input plus output size \$m = m\_\{in\} + m\_\{out\}\$ our algorithm runs in time \$O(m{\textasciicircum}\{1.3459\})\$. Even for Boolean matrices, this improves over the previous \$m{\textasciicircum}\{{\textbackslash}frac\{2ω\}\{ω+1\}+ε\}=O(m{\textasciicircum}\{1.4071\})\$ bound [Amossen, Pagh; 2009], which was a natural barrier since it coincides with the longstanding bound of all-edge triangle in sparse graphs [Alon, Yuster, Zwick; 1994]. We find it interesting that matrix multiplication can be solved faster than triangle detection in this natural setting. In fact, we establish an equivalence to a special case of the all-edge triangle problem.}
+      \field{note}{Version Number: 1}
+      \field{title}{The {Time} {Complexity} of {Fully} {Sparse} {Matrix} {Multiplication}}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/ARXIV.2309.06317
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/2309.06317
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/2309.06317
+      \endverb
+      \keyw{Data Structures and Algorithms (cs.DS),FOS: Computer and information sciences}
+    \endentry
+    \entry{he_-memory_2023}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=7faef6ed868414563143023994c207ff}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Luchang},
+           giveni={L\bibinitperiod}}}%
+        {{hash=1a1f520c1123587494e9d4c74ae07269}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a79f4ea7f7f5d607524d91c53b1dd930}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Chenchen},
+           giveni={C\bibinitperiod}}}%
+        {{hash=bc1669ee529062883bf9063aedb893cf}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Zhitang},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{7604ddac3531692b3f037308b394e97d}
+      \strng{fullhash}{b6b779928bd84aae161b51ba71cc8aaa}
+      \strng{fullhashraw}{b6b779928bd84aae161b51ba71cc8aaa}
+      \strng{bibnamehash}{7604ddac3531692b3f037308b394e97d}
+      \strng{authorbibnamehash}{7604ddac3531692b3f037308b394e97d}
+      \strng{authornamehash}{7604ddac3531692b3f037308b394e97d}
+      \strng{authorfullhash}{b6b779928bd84aae161b51ba71cc8aaa}
+      \strng{authorfullhashraw}{b6b779928bd84aae161b51ba71cc8aaa}
+      \field{labelalpha}{He+23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1674-733X, 1869-1919}
+      \field{journaltitle}{Sci. China Inf. Sci.}
+      \field{month}{11}
+      \field{number}{10}
+      \field{title}{In-memory computing based on phase change memory for high energy efficiency}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{66}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{200402}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s11432-023-3789-7
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/10.1007/s11432-023-3789-7
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/10.1007/s11432-023-3789-7
+      \endverb
+    \endentry
+    \entry{mannocci_-memory_2023}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=45c6b8979af5e521a6e293b834b6fbba}{%
+           family={Mannocci},
+           familyi={M\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=7f45344e90af2859ce00df309b154144}{%
+           family={Farronato},
+           familyi={F\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3129619812256a2dc4f944152eef982f}{%
+           family={Lepri},
+           familyi={L\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2d3eb458371a5953fd2e2c58767f00d4}{%
+           family={Cattaneo},
+           familyi={C\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=fc232a1e772aa9eb257520fee2d90215}{%
+           family={Glukhov},
+           familyi={G\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod}}}%
+        {{hash=13ccffa8fb1a9b606fa3ce4e5854867a}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Z.},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=f424b2271feed731868a2fb745ea9c98}{%
+           family={Ielmini},
+           familyi={I\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{49b746632b96ca894edd9a3e54eccd38}
+      \strng{fullhash}{3f216c077e04758d928c3799de0be9ae}
+      \strng{fullhashraw}{3f216c077e04758d928c3799de0be9ae}
+      \strng{bibnamehash}{49b746632b96ca894edd9a3e54eccd38}
+      \strng{authorbibnamehash}{49b746632b96ca894edd9a3e54eccd38}
+      \strng{authornamehash}{49b746632b96ca894edd9a3e54eccd38}
+      \strng{authorfullhash}{3f216c077e04758d928c3799de0be9ae}
+      \strng{authorfullhashraw}{3f216c077e04758d928c3799de0be9ae}
+      \field{labelalpha}{Man+23}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In-memory computing (IMC) has emerged as a new computing paradigm able to alleviate or suppress the memory bottleneck, which is the major concern for energy efficiency and latency in modern digital computing. While the IMC concept is simple and promising, the details of its implementation cover a broad range of problems and solutions, including various memory technologies, circuit topologies, and programming/processing algorithms. This Perspective aims at providing an orientation map across the wide topic of IMC. First, the memory technologies will be presented, including both conventional complementary metal-oxide-semiconductor-based and emerging resistive/memristive devices. Then, circuit architectures will be considered, describing their aim and application. Circuits include both popular crosspoint arrays and other more advanced structures, such as closed-loop memory arrays and ternary content-addressable memory. The same circuit might serve completely different applications, e.g., a crosspoint array can be used for accelerating matrix-vector multiplication for forward propagation in a neural network and outer product for backpropagation training. The different algorithms and memory properties to enable such diversification of circuit functions will be discussed. Finally, the main challenges and opportunities for IMC will be presented.}
+      \field{issn}{2770-9019}
+      \field{journaltitle}{APL Machine Learning}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shorttitle}{In-memory computing with emerging memory devices}
+      \field{title}{In-memory computing with emerging memory devices: {Status} and outlook}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{1}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{010902}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1063/5.0136403
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\6VSSM7YZ\\Mannocci et al. - 2023 - In-memory computing with emerging memory devices Status and outlook.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.aip.org/aml/article/1/1/010902/2878744/In-memory-computing-with-emerging-memory-devices
+      \endverb
+      \verb{url}
+      \verb https://pubs.aip.org/aml/article/1/1/010902/2878744/In-memory-computing-with-emerging-memory-devices
+      \endverb
+    \endentry
+    \entry{antolini_readout_2024}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=4dbb60620f9d16848042d507aaf525d6}{%
+           family={Antolini},
+           familyi={A\bibinitperiod},
+           given={Alessio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=102b4aa6906aa360f1c238c615bff06f}{%
+           family={Lico},
+           familyi={L\bibinitperiod},
+           given={Andrea},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f160535ec3096df605ff402722f4852b}{%
+           family={Zavalloni},
+           familyi={Z\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=841b900384027915c1fd292d3e354d48}{%
+           family={Scarselli},
+           familyi={S\bibinitperiod},
+           given={Eleonora\bibnamedelima Franchi},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c18442ebc923abadfde8eb76b1f1d449}{%
+           family={Gnudi},
+           familyi={G\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2c7cde222bb154e187d4b875bf4b6976}{%
+           family={Torres},
+           familyi={T\bibinitperiod},
+           given={Mattia\bibnamedelima Luigi},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=07b23f650ee0020b39e43e13921c4075}{%
+           family={Canegallo},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+        {{hash=37081c7ea7831a1f17cc5fe2b65c5ed8}{%
+           family={Pasotti},
+           familyi={P\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9855de57ae53b00f5462865e194c03b2}
+      \strng{fullhash}{fde51c59f8d751a57b1380795fbbce42}
+      \strng{fullhashraw}{fde51c59f8d751a57b1380795fbbce42}
+      \strng{bibnamehash}{9855de57ae53b00f5462865e194c03b2}
+      \strng{authorbibnamehash}{9855de57ae53b00f5462865e194c03b2}
+      \strng{authornamehash}{9855de57ae53b00f5462865e194c03b2}
+      \strng{authorfullhash}{fde51c59f8d751a57b1380795fbbce42}
+      \strng{authorfullhashraw}{fde51c59f8d751a57b1380795fbbce42}
+      \field{labelalpha}{Ant+24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This article presents a readout scheme for analog in-memory computing (AIMC) based on an embedded phase-change memory (ePCM). Conductance time drift is overcome with a hardware compensation technique based on a reference cell conductance tracking (RCCT). Accuracy drop due to circuits mismatch and variability involved in the computational chain are minimized with an optimized iterative program-and-verify algorithm applied to the phase-change memory (PCM) devices. The proposed AIMC scheme is designed and manufactured in a 90-nm STMicroelectronics CMOS technology, with the aim of adding a signed multiply-and-accumulate (MAC) computation feature to a Ge-Rich GeSbTe (GST) embedded PCM array. Experimental characterizations are performed under different operating conditions and show that the mean MAC decrease in time is approximately null at room temperature and reduced by a factor of 3 after 64-h bake at 85 {\textasciicircum}{\textbackslash}circ C. Based on several MAC operations, the estimated 512{\textbackslash}times 512 matrix-vector-multiplication (MVM) accuracy is 97.4\%, whose decrease in time is less than 3\% in the worst case.}
+      \field{issn}{2644-1349}
+      \field{journaltitle}{IEEE Open Journal of the Solid-State Circuits Society}
+      \field{title}{A {Readout} {Scheme} for {PCM}-{Based} {Analog} {In}-{Memory} {Computing} {With} {Drift} {Compensation} {Through} {Reference} {Conductance} {Tracking}}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{volume}{4}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{69\bibrangedash 82}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1109/OJSSCS.2024.3432468
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\UKBWPZ77\\Antolini et al. - 2024 - A Readout Scheme for PCM-Based Analog In-Memory Computing With Drift Compensation Through Reference.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ieeexplore.ieee.org/document/10609348
+      \endverb
+      \verb{url}
+      \verb https://ieeexplore.ieee.org/document/10609348
+      \endverb
+      \keyw{Accuracy,Analog in-memory computing (AIMC),artificial intelligence,Artificial intelligence,drift compensation,In-memory computing,matrix-vector multiplication (MVM),Nonvolatile memory,Phase change materials,Phase change random access memory,phase-change memory (PCM),Programming,Solid state circuits,Temperature measurement}
+    \endentry
+    \entry{bhutani_exploring_2024}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6bca0e1a65b3d7bc43a5a0653f16c464}{%
+           family={Bhutani},
+           familyi={B\bibinitperiod},
+           given={Preet},
+           giveni={P\bibinitperiod}}}%
+        {{hash=6f8f5daa27e86cff65c45284b7234511}{%
+           family={Shinde},
+           familyi={S\bibinitperiod},
+           given={Amol\bibnamedelima Ashokrao},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{fullhash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{fullhashraw}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{bibnamehash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{authorbibnamehash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{authornamehash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{authorfullhash}{a9f3a403691eb02c2769398888bb56ce}
+      \strng{authorfullhashraw}{a9f3a403691eb02c2769398888bb56ce}
+      \field{labelalpha}{BS24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The goal of this research is to find out the effects of multithreading on the consumption of system resources and efficiency by examining CPU utilization, memory use, Input/Output operation, and power consumption in the multithreaded systems. In order to measure static, adaptive, and dynamic multithreading performance under different workloads, the study compares the three models both through theory and by applying it to various experiments. That is why the results show that, when multithreading is implemented, the general CPU load and I/O performance improve, especially for computational and data-consuming operations. However, some problems include memory contention, context-switching overhead and, higher energy consumption are noted especially when threading is over-provisioned for. Real-time threading control strategies were the most effective as they periodically reconfigured the number of threads in a way that optimizes performance while optimizing resources. In addition, while the asynchronous I/O models provided the best performance improvements, energy use went up when multithreading was incorporated, thus the need for implementing trade-offs between performance and power usage. It offers significant findings related to the tuning of multithreading strategies so as to maximize system performance but with an acceptable level of resource utilization, should be of significance for practitioners, who are working with multicore processors and dealing with high-performing systems.}
+      \field{issn}{23500557}
+      \field{journaltitle}{IJIREM}
+      \field{month}{10}
+      \field{number}{5}
+      \field{title}{Exploring the {Impact} of {Multithreading} on {System} {Resource} {Utilization} and {Efficiency}}
+      \field{urlday}{19}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{66\bibrangedash 72}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.55524/ijirem.2024.11.5.9
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\LB2IRGWF\\Bhutani e Shinde - 2024 - Exploring the Impact of Multithreading on System Resource Utilization and Efficiency.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ijirem.org/view_abstract.php?title=Exploring-the-Impact-of-Multithreading-on-System-Resource-Utilization-and-Efficiency&year=2024&vol=11&primary=QVJULTE4MjM=
+      \endverb
+      \verb{url}
+      \verb https://ijirem.org/view_abstract.php?title=Exploring-the-Impact-of-Multithreading-on-System-Resource-Utilization-and-Efficiency&year=2024&vol=11&primary=QVJULTE4MjM=
+      \endverb
+    \endentry
+    \entry{gholami_ai_2024}{misc}{}{}
+      \name{author}{6}{}{%
+        {{hash=ff99b6be6f7ad0c9f311e5ddf91c01f7}{%
+           family={Gholami},
+           familyi={G\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e53d4d0172865556a0b0a5989a7f5c6f}{%
+           family={Yao},
+           familyi={Y\bibinitperiod},
+           given={Zhewei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=faeabf11d1a7a5d933680f8e5a503098}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Sehoon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0e3b9a7bcd16cba5248f1e89956ce9b5}{%
+           family={Hooper},
+           familyi={H\bibinitperiod},
+           given={Coleman},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6428c5852da0dfbdd50e39418c9571bf}{%
+           family={Mahoney},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=994177386e5a63171a7be588e97df7e5}{%
+           family={Keutzer},
+           familyi={K\bibinitperiod},
+           given={Kurt},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{413a2af5b9f6f77f60bcb0182a76654a}
+      \strng{fullhash}{68fd83d95e4317d4ff4715f24954382a}
+      \strng{fullhashraw}{68fd83d95e4317d4ff4715f24954382a}
+      \strng{bibnamehash}{413a2af5b9f6f77f60bcb0182a76654a}
+      \strng{authorbibnamehash}{413a2af5b9f6f77f60bcb0182a76654a}
+      \strng{authornamehash}{413a2af5b9f6f77f60bcb0182a76654a}
+      \strng{authorfullhash}{68fd83d95e4317d4ff4715f24954382a}
+      \strng{authorfullhashraw}{68fd83d95e4317d4ff4715f24954382a}
+      \field{labelalpha}{Gho+24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The availability of unprecedented unsupervised training data, along with neural scaling laws, has resulted in an unprecedented surge in model size and compute requirements for serving/training LLMs. However, the main performance bottleneck is increasingly shifting to memory bandwidth. Over the past 20 years, peak server hardware FLOPS has been scaling at 3.0x/2yrs, outpacing the growth of DRAM and interconnect bandwidth, which have only scaled at 1.6 and 1.4 times every 2 years, respectively. This disparity has made memory, rather than compute, the primary bottleneck in AI applications, particularly in serving. Here, we analyze encoder and decoder Transformer models and show how memory bandwidth can become the dominant bottleneck for decoder models. We argue for a redesign in model architecture, training, and deployment strategies to overcome this memory limitation.}
+      \field{month}{3}
+      \field{note}{arXiv:2403.14123 [cs] version: 1}
+      \field{title}{{AI} and {Memory} {Wall}}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2403.14123
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\RU4YAYYD\\Gholami et al. - 2024 - AI and Memory Wall.pdf:application/pdf;Snapshot:C\:\\Users\\leona\\Zotero\\storage\\LGEUWDGC\\2403.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2403.14123
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2403.14123
+      \endverb
+      \keyw{Computer Science - Distributed,Parallel,and Cluster Computing,Computer Science - Hardware Architecture,Computer Science - Machine Learning}
+    \endentry
+    \entry{khan_landscape_2024}{misc}{}{}
+      \name{author}{4}{}{%
+        {{hash=2970b11c3c4681b8eef9de10af73405c}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Asif\bibnamedelima Ali},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=ded12dea58f510cfbc38f6cffb4c3b8f}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={João\bibnamedelimb Paulo\bibnamedelimb C.\bibnamedelimi De},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=804fa3e3f4fc6ac13d5ab7eff0be21a6}{%
+           family={Farzaneh},
+           familyi={F\bibinitperiod},
+           given={Hamid},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1772ffd954e9048e847fa2ff046f2e8c}{%
+           family={Castrillon},
+           familyi={C\bibinitperiod},
+           given={Jeronimo},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{d493695b472350748aa41b6fa545513b}
+      \strng{fullhash}{c879b1c454cd630316dad369613dfe86}
+      \strng{fullhashraw}{c879b1c454cd630316dad369613dfe86}
+      \strng{bibnamehash}{d493695b472350748aa41b6fa545513b}
+      \strng{authorbibnamehash}{d493695b472350748aa41b6fa545513b}
+      \strng{authornamehash}{d493695b472350748aa41b6fa545513b}
+      \strng{authorfullhash}{c879b1c454cd630316dad369613dfe86}
+      \strng{authorfullhashraw}{c879b1c454cd630316dad369613dfe86}
+      \field{labelalpha}{Kha+24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In today's data-centric world, where data fuels numerous application domains, with machine learning at the forefront, handling the enormous volume of data efficiently in terms of time and energy presents a formidable challenge. Conventional computing systems and accelerators are continually being pushed to their limits to stay competitive. In this context, computing near-memory (CNM) and computing-in-memory (CIM) have emerged as potentially game-changing paradigms. This survey introduces the basics of CNM and CIM architectures, including their underlying technologies and working principles. We focus particularly on CIM and CNM architectures that have either been prototyped or commercialized. While surveying the evolving CIM and CNM landscape in academia and industry, we discuss the potential benefits in terms of performance, energy, and cost, along with the challenges associated with these cutting-edge computing paradigms.}
+      \field{month}{1}
+      \field{note}{arXiv:2401.14428 [cs] version: 1}
+      \field{shorttitle}{The {Landscape} of {Compute}-near-memory and {Compute}-in-memory}
+      \field{title}{The {Landscape} of {Compute}-near-memory and {Compute}-in-memory: {A} {Research} and {Commercial} {Overview}}
+      \field{urlday}{12}
+      \field{urlmonth}{9}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.2401.14428
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\NCB5SS5M\\Khan et al. - 2024 - The Landscape of Compute-near-memory and Compute-in-memory A Research and Commercial Overview.pdf:application/pdf;Snapshot:C\:\\Users\\leona\\Zotero\\storage\\98Y8Z3EU\\2401.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2401.14428
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2401.14428
+      \endverb
+      \keyw{Computer Science - Hardware Architecture}
+    \endentry
+    \entry{tang_multithreaded_2024}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=eb406b96c3102dfd464301beba3a7293}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Tao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8199466720d7f7f17e2b164a8464c719}{%
+           family={Qi},
+           familyi={Q\bibinitperiod},
+           given={Haijun},
+           giveni={H\bibinitperiod}}}%
+        {{hash=50392a23c79fb50fbb990f58c1f109b4}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Qingfeng},
+           giveni={Q\bibinitperiod}}}%
+        {{hash=1e6f26f32c3e6d7ca8348e5ee752a8e6}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{fd3e593718969c520f969d663e90e52b}
+      \strng{fullhash}{418da78087b7509d37e62ccd0cf4c369}
+      \strng{fullhashraw}{418da78087b7509d37e62ccd0cf4c369}
+      \strng{bibnamehash}{fd3e593718969c520f969d663e90e52b}
+      \strng{authorbibnamehash}{fd3e593718969c520f969d663e90e52b}
+      \strng{authornamehash}{fd3e593718969c520f969d663e90e52b}
+      \strng{authorfullhash}{418da78087b7509d37e62ccd0cf4c369}
+      \strng{authorfullhashraw}{418da78087b7509d37e62ccd0cf4c369}
+      \field{labelalpha}{Tan+24}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Reproducibility refers to getting bitwise identical floating point results from multiple runs of the same program, is an important basis for debugging or correctness checking in many codes. However the round-off error and non-associativity of floating point makes attaining reproducibility a challenge in large-scale, long-term parallel computing or solving ill conditioned problems. The dgbmv performs general banded matrix-vector multiplication for double precision, is the most basic Level-2 operation in BLAS. First, we designed a reproducible algorithm for banded matrix-vector multiplication repro\_dgbmv based on the technique of error-free transformation. Then the error of the algorithm is analyzed. Second, the algorithm is parallelized into repro\_dgbmv\_thread on ARM and x86 platforms. The numerical test results verify that repro\_dgbmv\_thread is reproducible and has higher accuracy than ordinary dgbmv. In numerical experiments on ARM platform, as the number of threads increases from 1 to 8, the run time of this algorithm is reduced by 5.2–7 times, while the run time of multithreaded dgbmv is only reduced by 2.2–3.8 times. In numerical experiments on x86 platform, as the number of threads increases from 1 to 15, the run time of this algorithm is reduced by 7.7–10.6 times, while the run time of multithreaded dgbmv is only reduced by 4.2–6.8 times.}
+      \field{issn}{2227-7390}
+      \field{journaltitle}{Mathematics}
+      \field{month}{1}
+      \field{note}{Number: 3 Publisher: Multidisciplinary Digital Publishing Institute}
+      \field{number}{3}
+      \field{title}{Multithreaded {Reproducible} {Banded} {Matrix}-{Vector} {Multiplication}}
+      \field{urlday}{18}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \field{pages}{422}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/math12030422
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:C\:\\Users\\leona\\Zotero\\storage\\XBIMZCN4\\Tang et al. - 2024 - Multithreaded Reproducible Banded Matrix-Vector Multiplication.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/2227-7390/12/3/422
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/2227-7390/12/3/422
+      \endverb
+      \keyw{banded matrix,matrix-vector multiplication,multithreading,reproducibility}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
