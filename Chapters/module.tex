@@ -151,7 +151,7 @@ Specifically to this case, computing the sum of each row into a register without
 
 To implement this optimisation, a temporary variable is used to store the result of each row computation before writing it back to the output vector.
 This approach leads to a significant reduction in memory accesses, with the only drawback that it is applicable only when the compiler is set to optimise the code.
-Analysing the assembly code generated for each of the cases, it is immediately clear why.
+Table \ref{tab:asm_opt_comparison} provides the assembly code generated for each of the cases, analysing it is shows why shuch optimisation is beneficial only when compiler optimisation are enabled.
 In the non-optimised case the compiler store that value on the stack and retrieves it at each iteration degrading the overall performances.\\
 \input{Figures/ams_comp.tex}
 \subsection{Multithreading}\label{sec:multithread}
