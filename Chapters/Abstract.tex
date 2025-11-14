@@ -21,13 +21,13 @@ Moving data back and forth between CPU and memory is becoming more time-consumin
 
 This dissertation explores Phase-Change Memory (PCM) as a potential solution through Analog In-Memory Computing (AIMC).
 The core idea is to perform the computation directly where the data is stored instead of relying on time-consuming data transfers.
-PCM is particularly suitable for this kind of application because its analog resistance states can naturally represent neural network weights, and its crossbar architecture allows for parallel computation of matrix-vector multiplications in a single analog operation.
+PCM is particularly suitable for this type of application because its analog resistance states can naturally represent neural network weights, and its crossbar architecture allows for parallel computation of matrix-vector multiplications in a single analog operation.
 
 The main contribution of this work is a virtual prototype of a PCM-based AIMC accelerator. 
 The model is implemented in C++ and integrated into the GVSoC simulation platform within the PULP ecosystem.
 A significant part of the work focused on optimising the simulation itself, making it sufficiently fast to be useful for experimentation.
 This involved designing cache-friendly data structures and implementing multithreaded execution for the core Matrix-Vector Multiplication algorithm.
 Performance benchmarks demonstrate the effectiveness of these optimisations.
-The flat buffer data structure reduces data reads by up to 5 times compared to a standard multidimensional array approach, 
+The flat buffer data structure reduces data reads by up to $5\times$ compared to a standard multidimensional array approach, 
 and multithreading provides significant speedup on multi-core systems, with optimal performance achieved at 8 threads for the tested configurations.
 The result is a configurable simulation framework that can be used to explore AIMC architectures and provides a foundation for co-designing hardware accelerators and the software needed to use them effectively.

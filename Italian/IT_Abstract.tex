@@ -16,7 +16,7 @@
 
 Le architetture di Von Neumann stanno raggiungendo il limite.
 La separazione fisica tra memoria e unità di elaborazione crea un collo di bottiglia che sta diventando critico per le applicazioni basate sull'elaborazione di grandi quantità di dati, in particolare nell'ambito dell'Intelligenza Artificiale e del Machine Learning.
-Lo spostamento continuo dei dati tra CPU e memoria sta diventando più dispendioso in termini di tempo ed energia rispetto alla computazione stessa: questo è il problema noto come "\textit{memory wall}".
+Lo spostamento continuo dei dati tra CPU e memoria sta diventando più dispendioso in termini di tempo ed energia rispetto alla computazione stessa: questo è il problema noto come \textit{"memory wall"}.
 
 Questa tesi esplora la memoria a cambiamento di fase (PCM, Phase-Change Memory) come potenziale soluzione attraverso il paradigma del calcolo analogico in memoria (AIMC, Analog In-Memory Computing).
 L'idea fondamentale è quella di eseguire le operazioni di calcolo direttamente dove i dati sono memorizzati, invece di affidarsi a costosi cicli di trasferimento.
@@ -26,6 +26,6 @@ Il principale contributo di questo lavoro è la realizzazione di un prototipo vi
 Il modello è implementato in C++ e integrato nella piattaforma di simulazione GVSoC, all'interno dell'ecosistema PULP.
 Una parte significativa del lavoro si è concentrata sull'ottimizzazione della simulazione, rendendola sufficientemente veloce da essere utile per esperimenti pratici.
 Ciò ha comportato la progettazione di strutture dati ottimizzate per la cache e l'implementazione di esecuzione multithread per l'algoritmo principale di moltiplicazione matrice-vettore.
-I test prestazionali dimostrano l'efficacia di queste ottimizzazioni: la struttura dati a buffer lineare riduce i cache miss fino a un fattore di X rispetto all'approccio tradizionale basato su array multidimensionali, mentre il multithreading offre un notevole incremento di velocità sui sistemi multicore, con prestazioni ottimali ottenute con 8 thread nelle configurazioni testate.
+I test prestazionali dimostrano l'efficacia di queste ottimizzazioni: la struttura dati a buffer lineare riduce gli accessi in lettura di $5\times$ rispetto all'approccio tradizionale basato su array multidimensionali, mentre il multithreading offre un notevole incremento di velocità sui sistemi multicore, con prestazioni ottimali ottenute con 8 thread nelle configurazioni testate.
 
 Il risultato è un framework di simulazione configurabile, utilizzabile per esplorare architetture AIMC e fornire una base per la co-progettazione di acceleratori hardware e del software necessario al loro utilizzo efficace.

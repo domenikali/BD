@@ -27,9 +27,10 @@ Naive    & 8132735 & 2623013 & 8660 & 263186 &  1049093 & 534   \\
 Naive Flat     & 7343702 & 1311265 & 8270 & 262154 & 1049093 & 534   \\
 Optimise Flat  & 1814663 & 66586   & 8340 & 1027   & 33809   & 1077  \\
 4-Thread  & 1814672 & 66580   & 8346 & 1024   & 33804   & 1071  \\
-8-Thread  & 1808472 & 65544   & 8211 & 0      & 33792   & 1050  \\
-16-Thread & 1807632 & 65552   & 8232 & 0      & 33808   & 1066  \\
+8-Thread  & 1808472 & 65544   & 8211 & *  & 33792   & 1050  \\
+16-Thread & 1807632 & 65552   & 8232 &  *  & 33808   & 1066  \\
 \bottomrule
 \end{tabular}
 }
+{\footnotesize \textit{*} Cachegrind does not support read misses for read-write-modify operations on -O3 optimisation level.}
 \end{table}

@@ -13,16 +13,17 @@ We conducted tests using two profiles, one with optimisation switched on and the
 
 \subsubsection{Performances Data}\label{sec:Data_Perf}
 The main metric used to evaluate the performance of the algorithms is the time to complete a single MVM computed with the aid of the $std::high\_resolution\_clock$.
+\clearpage
 \begin{figure}[!htb]
-\begin{adjustwidth}{-1.75cm}{-1.75cm} % expands margins: left, right
+\begin{adjustwidth}{-1.75cm}{-1.75cm} 
 
 \begin{minipage}{1.25\textwidth}
-    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_dispersion_plot (1).png}
+    {\includegraphics[width=\textwidth]{Figures/disper_opt.png}
     \label{fig:no_opt_plot}}
 \end{minipage}
 \hfill
 \begin{minipage}{1.25\textwidth}
-    {\includegraphics[width=\textwidth]{Figures/mvm_benchmark_dispersion_plot.png}
+    {\includegraphics[width=\textwidth]{Figures/disper.png}
     \label{fig:opt_plot}}
 \end{minipage}
 \caption{Scatter plots of the results with and without compiler optimisation. \label{fig:plots}}
@@ -53,7 +54,7 @@ Tables \ref{tab:cachegrind_o3_revised} and \ref{tab:cachegrind_o0} present detai
 These metrics provide more data on how each algorithm interacts with the CPU cache hierarchy.
 Starting with the instruction counts (Ir), we observe a $4\times$ reduction in instructions executed when compiled with O3 and up to $6\times$ without compiler optimisations. This outcome aligns with the overall memory access reductions seen in both data reads (Dr) and writes (Dw).
 The cache miss rate (L1 Read Misses) remains constant across all algorithms and optimisation levels, indicating that our optimisations primarily reduce the volume of memory traffic rather than improving cache hit rates.
-However, a closer look at the miss count reveals that the remaining misses are the result of compulsory misses that Cachegrind can not simulate away by including hardware prefetching simulation.
+However, a closer look at the miss count reveals that the remaining misses are the result of compulsory misses that Cachegrind cannot simulate away by including hardware prefetching simulation.
 Using the Linux perf tool, further analysis shows that the algorithms achieve an almost-zero L1-cache miss rate on typical consumer hardware.
 While this tool might not be as accurate as Cachegrind, it gives a better idea of the real cache miss rate, counting the hardware prefetcher.
 
@@ -70,7 +71,7 @@ Under O0, the 8-thread implementation outperforms the single-threaded version by
 This is because, without compiler optimisations, the benefits of parallel execution outweigh the overhead of thread management.
 However, under O3, the single-threaded optimised version becomes the fastest solution, outperforming any multithreaded implementation.
 This shift occurs because the compiler greatly enhances the effectiveness of the single-threaded optimisations.
-Cachegrind results indicate that the multithreaded versions consume about the same amount of memory accesses as the single-threaded optimised version.
+Cachegrind results indicate that the multithreaded versions consume approximately the same amount of memory accesses as the single-threaded optimised version.
 
 However, studies show that multithreaded implementations can incur additional memory overhead \cite{tang_multithreaded_2024}.
 Given the memory-constrained nature of large-scale SoC simulations discussed in the previous chapter (Section \ref{sec:sw_const}), this overhead cannot be ignored.
@@ -111,7 +112,7 @@ After thorough testing, the algorithm was validated, passing all tests.
 To validate the integrations with GVSoC, different tests were performed.
 To maintain the scope of the project, the value of the weights was limited to $4$ bit integers; however, the module is fully parametric and can be used with any number of bits.
 The clipping of the weights was the first aspect to be validated; tests with weights out of range were run, and the result of the MVM was checked to be correct.
-Then tests with randomised vector and matrix values with all ones weights were executed, the result of the MVM is known and can be easily checked as $Y_i=\sum_{i}^{N}1\cdot X_i$, making the expected result appear on every output value.
+Then tests with randomised vector and matrix values with all ones weights were executed, the result of the MVM is known and can be easily checked as $Y_i=\sum_{j}^{N}1\cdot X_j$, making the expected result appear on every output value.
 
 Finally, a test with random weights and vectors containing the sign of the weights was conducted, as before, the result of the MVM was easily checked as the sum of the values of the rows with the sign of the weights.
 To further validate the module, using the same approach as before, a value within each row of the matrix was set to zero, and the result was checked by comparing the difference, given by excluding the zeroed value, with the expected value.

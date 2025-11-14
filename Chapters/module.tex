@@ -8,8 +8,8 @@ Before starting the implementation is key to define how the simulator works and 
 
 To integrate the PCM module into GVSoC, we implemented it as a memory-mapped peripheral following the standard GVSoC module architecture.
 
-\subsection{Module Structure}
-The implementation consists of three components:
+\subsection{Module Structure}\label{sec:module_struct}
+The implementation consists of three components all connected through the Simulation Engine, as shown in Figure \picref{fig:pcm_gvsoc_integration}.
 
 \textbf{C++ Model Class:} The core logic is implemented in a class inheriting from \textit{vp::component}. This class handles incoming memory requests, maintains the PCM crossbar state, and executes MVM operations.
 
@@ -17,7 +17,14 @@ The implementation consists of three components:
 
 \textbf{JSON Configuration:} The generated JSON file contains all module parameters including matrix dimensions, cell precision, and timing characteristics.
 
-\subsection{Bus Interface}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\textwidth]{Figures/GVSoC_Struct.png}
+    \caption{GVSoC Simulator Structure}
+    \label{fig:pcm_gvsoc_integration}
+\end{figure}
+
+\subsection{Bus Interface}\label{sec:bus_inter}
 The module connects to the system through GVSoC's wire mechanism. A request handler with signature \textit{vp::IoReqStatus handler(vp::Block* block, vp::IoReq* req)} processes incoming read and write operations from the simulated RISC-V cores.
 
 The memory map exposes three regions:
@@ -27,15 +34,21 @@ The memory map exposes three regions:
   \item \textbf{Control Registers:} Configuration of operation mode, matrix dimensions, and computation triggers
 \end{itemize}
 
-\subsection{Timing Model}
-GVSoC is a event driven simulator, the timing is represented in two ways:
+\subsection{Timing Model}\label{sec:timing_mod}
+GVSoC is an event-driven simulator, the timing is represented in two main ways as shown in figure \picref{fig:Event_engine}:
 \begin{itemize}
-  \item \textbf{Functional Timing:} Each operations (e.g., read, write) can be performed in zero time, meaning that the operation is completed as soon as it is called but a latency is added to the envent to guarantee correct timing simulation.
-  \item \textbf{Event Scheduling:} Operations can be scheduled to occur after a specific delay by enqueing the event in the simulator's event queue. Once the delay elapses, the event triggers the module's \textit{ClockEvent} handler to process the operation.
+  \item \textbf{Functional Timing:} Each operations (e.g., read, write) can be performed in zero time, meaning that the operation is completed as soon as it is called but a latency is added to the event to guarantee correct timing simulation.
+  \item \textbf{Event Scheduling:} Operations can be scheduled to occur after a specific delay by enqueuing the event in the simulator's event queue. Once the delay elapses, the event triggers the module's \textit{ClockEvent} handler to process the operation.
 \end{itemize}
-The module will make good use of these mechanism, simulating the timing characteristics of PCM operations.
+The module will make good use of these mechanisms, simulating the timing characteristics of PCM operations.
 
-\subsection{Power Management}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{Figures/Event_engine.png}
+    \caption{GVSoC Event Engine}
+    \label{fig:Event_engine}
+\end{figure}
+\subsection{Power Management}\label{sec:power_man}
 The module connects to GVSoC's power wire system, allowing it to be powered down when not in use. While no specific power management features are implemented, the module can be easily extended to include them in the future.
 
 \section{Architecture Constraints}\label{sec:arch_const}
@@ -92,7 +105,7 @@ Dynamically allocated multidimensional arrays can create cache locality problems
 Another critical concern for this use case is suboptimal memory usage. Each allocation may not be contiguous in memory, resulting in fragmentation and inefficient use of available memory. Furthermore, pointer dereferencing and pointer arithmetic can lead to inefficient memory access patterns, especially with large matrix dimensions.
 
 \subsubsection{Flat Buffer}\label{sec:flat_buf}
-A second, more optimized approach would be to use a "flat" n-dimensional array. This solution requires more advanced indexing calculations, leading to significantly fewer instructions for memory allocation and deallocation. Implementing this approach results in noticeable performance improvements. 
+A second, more optimised approach would be to use a "flat" n-dimensional array. This solution requires more advanced indexing calculations, leading to significantly fewer instructions for memory allocation and deallocation. Implementing this approach results in noticeable performance improvements. 
 Analysis of a test program using Cachegrind (a Valgrind tool that simulates cache access) shows a marked decrease in cache misses and a reduction in memory reads. The decrease in cache misses is due to the sequential storage of data, which is read from memory in a similar sequential manner. The reduction in memory reads occurs because contiguous memory allocation eliminates the overhead of pointer dereferencing.
 One of the main drawbacks of this method is the need to manually compute the index of each cell. However, using inline functions, macros, and strategies for register reuse can help reduce complexity and the number of instructions required.
 
@@ -178,7 +191,7 @@ It is important to note that the DAC introduces latency that is annotated as par
 The Analog to Digital Converter (ADC) is another key component of the PCM module, responsible for converting the analog output signals from the columns of the PCM array back into digital values.
 Similar to the DAC, there is no need to simulate the actual analog signal because the PCM model can directly work with digital values; however, the ADC will clip the output values to the maximum and minimum values representable by the number of bits used in the conversion.
 To model this behaviour, the ADC model applies a  clipping function to the output values.
-\begin{align}     
+\begin{align*}     
     n=output\;bit\;size\\
     ADC(y) = 
     \begin{cases}
@@ -186,11 +199,11 @@ To model this behaviour, the ADC model applies a  clipping function to the outpu
     -2^{n-1} & \text{if } y < -2^{n-1} \\
     y & \text{otherwise}
     \end{cases}
-\end{align}
+\end{align*}
 This function ensures that the output values are always within the valid range for the given output bit size.
 Similar to the DAC, the ADC introduces latency that is annotated as part of the simulation.
 
-\section{GVSoC Integration}\label{sec:gvsoc_int}
+\section{Memory Mapping and Configuration}\label{sec:gvsoc_int}
 To integrate the PCM module into the GVSoC framework, we need to create a new peripheral class that represents the PCM.
 This class will be responsible for handling the communication between the model and the rest of the system,
 as well as managing the internal state of the PCM.
