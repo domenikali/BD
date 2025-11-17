@@ -106,7 +106,7 @@ Another critical concern for this use case is suboptimal memory usage. Each allo
 
 \subsubsection{Flat Buffer}\label{sec:flat_buf}
 A second, more optimised approach would be to use a "flat" n-dimensional array. This solution requires more advanced indexing calculations, leading to significantly fewer instructions for memory allocation and deallocation. Implementing this approach results in noticeable performance improvements. 
-Analysis of a test program using Cachegrind (a Valgrind tool that simulates cache access) shows a marked decrease in cache misses and a reduction in memory reads. The decrease in cache misses is due to the sequential storage of data, which is read from memory in a similar sequential manner. The reduction in memory reads occurs because contiguous memory allocation eliminates the overhead of pointer dereferencing.
+Analysis of a test program using Cachegrind (a Valgrind tool that simulates cache access) shows a slight decrease in cache misses and a marked reduction in memory reads. The decrease in cache misses is due to the sequential storage of data, which is read from memory in a similar sequential manner. The reduction in memory reads occurs because contiguous memory allocation eliminates the overhead of pointer dereferencing.
 One of the main drawbacks of this method is the need to manually compute the index of each cell. However, using inline functions, macros, and strategies for register reuse can help reduce complexity and the number of instructions required.
 
 \subsection{Differential Algorithm}\label{sec:diff_algo}
